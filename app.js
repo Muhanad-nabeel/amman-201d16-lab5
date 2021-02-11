@@ -62,7 +62,6 @@ function sumAndMultiply(a , b , c) {
   let multiply= a * b * c;
   return[sum , multiply , '4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'] ;
 }
-
 sumAndMultiply(sum(4,5,7));
 sumAndMultiply(multiply(4,5,7));
 testSumAndMultiply(4,5,7);
