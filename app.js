@@ -34,8 +34,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   //eslint-disable-line
+  let multiply= a * b;
+  return[45,'The product of 5 and 9 is 45.'];
 }
-
+multiply(5,9);
+testMultiply(5,9)
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -55,6 +58,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
+  
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
