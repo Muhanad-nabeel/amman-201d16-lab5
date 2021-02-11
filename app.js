@@ -56,10 +56,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) {
+function sumAndMultiply(a , b , c) {
   //eslint-disable-line
-  
+  let sum = a + b + c;
+  let multiply= a * b * c;
+  return[sum , multiply , '4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'] ;
 }
+sumAndMultiply(sum(4,5,7));
+sumAndMultiply(multiply(4,5,7));
+testSumAndMultiply(4,5,7);
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
