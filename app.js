@@ -58,8 +58,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a , b , c) {
   //eslint-disable-line
-  let sum = (a + b + c);
-  let multiply= (a * b * c);
+  let sum = a + b + c;
+  let multiply= a * b * c;
   return[sum , multiply , '4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'] ;
 }
 
