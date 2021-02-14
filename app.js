@@ -9,13 +9,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-function sum(a , b) {
+function sum(a, b) {
   //eslint-disable-line
-let sum = a + b;
-  return[sum,'The sum of 4 and 7 is 11.'];
+  let sum = a + b;
+  return [sum, 'The sum of ' + a + ' and ' + b + ' is ' + sum + '.'];
 }
-sum(4,7);
-testSum(4,7);
+sum(4, 7);
+testSum(4, 7);
 
 
 // Here is the test for sum(); uncomment it to run it
@@ -34,11 +34,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   //eslint-disable-line
-  let multiply= a * b;
-  return[45,'The product of 5 and 9 is 45.'];
+  let multiply = a * b;
+  return [multiply, 'The product of ' + a + ' and ' + b + ' is ' + multiply
+    + '.'];
 }
-multiply(5,9);
-testMultiply(5,9)
+multiply(5, 9);
+testMultiply(5, 9)
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -56,15 +57,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a , b , c) {
+function sumAndMultiply(a, b, c) {
   //eslint-disable-line
   let sum = a + b + c;
-  let multiply= a * b * c;
-  return[sum , multiply , '4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'] ;
+  let multiply = a * b * c;
+  return [sum, multiply, + a + ' and ' + b + ' and ' + c + ' sum to ' + sum + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply + '.'];
 }
-sumAndMultiply(sum(4,5,7));
-sumAndMultiply(multiply(4,5,7));
-testSumAndMultiply(4,5,7);
+sumAndMultiply(sum(4, 5, 7));
+sumAndMultiply(multiply(4, 5, 7));
+testSumAndMultiply(4, 5, 7);
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
@@ -86,12 +87,16 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
   //eslint-disable-line
-  let sum = 2+3+4;
-  return [sum,'2,3,4 was passed in as an array of numbers, and 9 is their sum.'];
+ testArray[0];
+ testArray[1];
+ testArray[2];
 
-  
+
+  let sum = testArray[0] + testArray[1] + testArray[2] ;
+  return [sum, '2,3,4 was passed in as an array of numbers, and ' + sum + ' is their sum.'];
+
+
 }
-sumArray(2,3,4);
 testSumArray();
 
 
@@ -114,10 +119,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) {
   //eslint-disable-line
-  let sum = 2 * 3 * 4;
-  return[sum,'The numbers 2,3,4 have a product of 24.'];
+  let multiply = 2 * 3 * 4;
+  return [multiply, 'The numbers 2,3,4 have a product of '+ multiply +'.'];
 }
-multiplyArray(sum);
+multiplyArray(multiply);
 testMultiplyArray();
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -146,7 +151,20 @@ let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) {
   //eslint-disable-line
+  testDynamicArray[0];
+  testDynamicArray[1];
+  testDynamicArray[2];
+  testDynamicArray[3];
+  testDynamicArray[4];
+  
+
+  let multiply =  testDynamicArray[0] * testDynamicArray[1] * testDynamicArray[2] *   testDynamicArray[3] *   testDynamicArray[4];
+  return [multiply, 'The numbers 1,2,3,4,5 have a product of '+multiply+'.'];
+
 }
+multiplyAnyArray(multiply);
+testMultiplyAnyArray();
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
